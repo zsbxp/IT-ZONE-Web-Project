@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>
+			RailS
+		</title>
+	</head>
+	<body>
+		<h1>
+			<% @files = Dir.glob("*") %>
+			<% for file in @files %>
+			<%= file %>
+			<% end %>
+		</h1>
+	</body>
+</html>
